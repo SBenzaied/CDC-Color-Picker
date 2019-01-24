@@ -10,6 +10,7 @@ import UIKit
 
 protocol ColorPickerViewDelegate {
     func userDidChooseColor(color: UIColor)
+    
 }
 
 
@@ -19,6 +20,7 @@ class ColorPickerViewController: UIViewController {
     
     @IBAction func greenButtonTouched() {
         delegate?.userDidChooseColor(color: ColorAsset.green.color)
+        
     }
     
     
@@ -29,5 +31,7 @@ class ColorPickerViewController: UIViewController {
     @IBAction func purpleButtonTouched() {
         delegate?.userDidChooseColor(color: ColorAsset.purple.color)
     }
+    
+    
     
 }
