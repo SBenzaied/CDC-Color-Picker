@@ -8,14 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,SegueHandlerType {
     
+    enum SegueIdentifier: String {
+
+        case picker
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "picker" {
+        
+        switch segueIdentifierForSegue(segue){
+        case .picker:
             let destVC = segue.destination as! ColorPickerViewController
             destVC.delegate = self
+            break
+            
+            
         }
-        
+
         
     }
 
@@ -31,6 +40,10 @@ extension ViewController: ColorPickerViewDelegate{
    
 
 }
+
+
+
+
 
 
 
