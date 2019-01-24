@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0865971421F9BB83006F16C9 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865971321F9BB83006F16C9 /* ColorPickerViewController.swift */; };
 		0865971821F9FEDA006F16C9 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865971721F9FEDA006F16C9 /* SegueHandlerType.swift */; };
+		0865971B21FA1449006F16C9 /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865971A21FA1449006F16C9 /* ColorAsset.swift */; };
 		08FCDFA921F9ACD2003E3E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCDFA821F9ACD2003E3E10 /* AppDelegate.swift */; };
 		08FCDFAB21F9ACD2003E3E10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCDFAA21F9ACD2003E3E10 /* ViewController.swift */; };
 		08FCDFAE21F9ACD2003E3E10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FCDFAC21F9ACD2003E3E10 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0865971321F9BB83006F16C9 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorPickerViewController.swift; path = ColorPicker/Controllers/ColorPickerViewController.swift; sourceTree = SOURCE_ROOT; };
 		0865971721F9FEDA006F16C9 /* SegueHandlerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		0865971A21FA1449006F16C9 /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
 		08FCDFA521F9ACD2003E3E10 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FCDFA821F9ACD2003E3E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08FCDFAA21F9ACD2003E3E10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,9 +61,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		0865971921FA13C3006F16C9 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				08FCDFAF21F9ACD3003E3E10 /* Assets.xcassets */,
+				08FCDFBA21F9AE62003E3E10 /* Color.xcassets */,
+				0865971A21FA1449006F16C9 /* ColorAsset.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		08FCDF9C21F9ACD2003E3E10 = {
 			isa = PBXGroup;
 			children = (
+				0865971921FA13C3006F16C9 /* Color */,
 				08FCDFA721F9ACD2003E3E10 /* ColorPicker */,
 				08FCDFA621F9ACD2003E3E10 /* Products */,
 			);
@@ -82,8 +95,6 @@
 				0865971521F9EFC5006F16C9 /* Views */,
 				08FCDFA821F9ACD2003E3E10 /* AppDelegate.swift */,
 				0865971721F9FEDA006F16C9 /* SegueHandlerType.swift */,
-				08FCDFAF21F9ACD3003E3E10 /* Assets.xcassets */,
-				08FCDFBA21F9AE62003E3E10 /* Color.xcassets */,
 				08FCDFB421F9ACD3003E3E10 /* Info.plist */,
 			);
 			path = ColorPicker;
@@ -164,6 +175,7 @@
 				08FCDFAB21F9ACD2003E3E10 /* ViewController.swift in Sources */,
 				08FCDFA921F9ACD2003E3E10 /* AppDelegate.swift in Sources */,
 				0865971821F9FEDA006F16C9 /* SegueHandlerType.swift in Sources */,
+				0865971B21FA1449006F16C9 /* ColorAsset.swift in Sources */,
 				0865971421F9BB83006F16C9 /* ColorPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
