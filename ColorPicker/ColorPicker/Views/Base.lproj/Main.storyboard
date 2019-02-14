@@ -50,50 +50,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LEG-3h-7KG">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="LEG-3h-7KG">
+                                <rect key="frame" x="10" y="102.5" width="355" height="462"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZq-V0-F96">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="92" id="aJG-JB-Z5A"/>
+                                        </constraints>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <state key="normal" title="Orange" image="orangeIcon" backgroundImage="orangeIcon"/>
+                                        <state key="normal" title="Orange" backgroundImage="orangeIcon"/>
                                         <connections>
                                             <action selector="orangeButtonTouched" destination="nD9-8b-2DR" eventType="touchUpInside" id="Ehj-Cv-gTt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5V-sR-30l">
-                                        <rect key="frame" x="0.0" y="311" width="375" height="25"/>
-                                        <state key="normal" title="Vert" image="greenIcon" backgroundImage="greenIcon"/>
-                                        <connections>
-                                            <action selector="greenButtonTouched" destination="nD9-8b-2DR" eventType="touchUpInside" id="hxL-da-acq"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSh-Yq-9oe">
-                                        <rect key="frame" x="0.0" y="622" width="375" height="25"/>
-                                        <state key="normal" title="Violet" image="purpleIcon" backgroundImage="purpleIcon"/>
+                                        <rect key="frame" x="0.0" y="185" width="355" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="92" id="aur-OE-9wR"/>
+                                        </constraints>
+                                        <state key="normal" title="Violet" backgroundImage="purpleIcon"/>
                                         <connections>
                                             <action selector="purpleButtonTouched" destination="nD9-8b-2DR" eventType="touchUpInside" id="ls1-n8-QaN"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5V-sR-30l">
+                                        <rect key="frame" x="0.0" y="370" width="355" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="92" id="DE8-AR-zxD"/>
+                                        </constraints>
+                                        <state key="normal" title="Vert" backgroundImage="greenIcon"/>
+                                        <connections>
+                                            <action selector="greenButtonTouched" destination="nD9-8b-2DR" eventType="touchUpInside" id="hxL-da-acq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="f5V-sR-30l" firstAttribute="leading" secondItem="LEG-3h-7KG" secondAttribute="leading" id="3E1-2q-tDE"/>
-                                    <constraint firstAttribute="trailing" secondItem="vZq-V0-F96" secondAttribute="trailing" id="K7l-tq-CTr"/>
-                                    <constraint firstAttribute="trailing" secondItem="GSh-Yq-9oe" secondAttribute="trailing" id="Tz8-fx-R1d"/>
-                                    <constraint firstItem="vZq-V0-F96" firstAttribute="leading" secondItem="LEG-3h-7KG" secondAttribute="leading" id="b94-Rd-Yzi"/>
-                                    <constraint firstAttribute="trailing" secondItem="f5V-sR-30l" secondAttribute="trailing" id="bhV-pm-cTM"/>
-                                    <constraint firstItem="GSh-Yq-9oe" firstAttribute="leading" secondItem="LEG-3h-7KG" secondAttribute="leading" id="jDE-2K-o1B"/>
+                                    <constraint firstAttribute="trailing" secondItem="f5V-sR-30l" secondAttribute="trailing" id="4pq-ut-xzg"/>
+                                    <constraint firstItem="f5V-sR-30l" firstAttribute="leading" secondItem="LEG-3h-7KG" secondAttribute="leading" id="ROc-ue-XgM"/>
+                                    <constraint firstAttribute="trailing" secondItem="vZq-V0-F96" secondAttribute="trailing" id="XIG-wK-h49"/>
+                                    <constraint firstAttribute="trailing" secondItem="GSh-Yq-9oe" secondAttribute="trailing" id="XWa-8N-7vX"/>
+                                    <constraint firstItem="GSh-Yq-9oe" firstAttribute="leading" secondItem="LEG-3h-7KG" secondAttribute="leading" id="bPd-Cq-Gsw"/>
+                                    <constraint firstAttribute="height" constant="462" id="e1p-Sr-3bg"/>
+                                    <constraint firstItem="vZq-V0-F96" firstAttribute="leading" secondItem="LEG-3h-7KG" secondAttribute="leading" id="hpt-8s-uTo"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LEG-3h-7KG" firstAttribute="leading" secondItem="si2-LT-sxX" secondAttribute="leading" id="3NQ-Gj-EuA"/>
-                            <constraint firstItem="LEG-3h-7KG" firstAttribute="centerX" secondItem="Dew-Eh-PGv" secondAttribute="centerX" id="D9d-64-Q1B"/>
-                            <constraint firstItem="si2-LT-sxX" firstAttribute="bottom" secondItem="LEG-3h-7KG" secondAttribute="bottom" id="Odv-Nx-dnK"/>
-                            <constraint firstItem="LEG-3h-7KG" firstAttribute="top" secondItem="si2-LT-sxX" secondAttribute="top" id="bwG-49-w84"/>
-                            <constraint firstItem="LEG-3h-7KG" firstAttribute="centerY" secondItem="Dew-Eh-PGv" secondAttribute="centerY" id="f6E-9s-GP6"/>
-                            <constraint firstItem="si2-LT-sxX" firstAttribute="trailing" secondItem="LEG-3h-7KG" secondAttribute="trailing" id="n2y-Q0-abv"/>
+                            <constraint firstItem="si2-LT-sxX" firstAttribute="trailing" secondItem="LEG-3h-7KG" secondAttribute="trailing" constant="10" id="0Ay-uU-vPj"/>
+                            <constraint firstItem="LEG-3h-7KG" firstAttribute="leading" secondItem="si2-LT-sxX" secondAttribute="leading" constant="10" id="929-3A-Yzx"/>
+                            <constraint firstItem="LEG-3h-7KG" firstAttribute="centerY" secondItem="Dew-Eh-PGv" secondAttribute="centerY" id="T38-1d-AmU"/>
+                            <constraint firstItem="LEG-3h-7KG" firstAttribute="centerX" secondItem="Dew-Eh-PGv" secondAttribute="centerX" id="r1i-s7-F4J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="si2-LT-sxX"/>
                     </view>
