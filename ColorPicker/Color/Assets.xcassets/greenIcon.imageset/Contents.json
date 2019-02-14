@@ -1,6 +1,20 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 12,
+          "top" : 12,
+          "right" : 12,
+          "left" : 12
+        }
+      },
       "idiom" : "universal",
       "filename" : "greenIcon.pdf",
       "scale" : "1x"
